@@ -1,4 +1,4 @@
-package yass.stephanie.com.flight_checker.ui.mainactivity2
+package yass.stephanie.com.flight_checker.ui.findfragment
 
 import android.arch.lifecycle.ViewModel
 

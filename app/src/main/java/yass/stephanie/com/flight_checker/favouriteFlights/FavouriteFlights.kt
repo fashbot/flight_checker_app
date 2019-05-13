@@ -1,4 +1,4 @@
-package yass.stephanie.com.flight_checker.ui.mainactivity2
+package yass.stephanie.com.flight_checker.favouriteFlights
 
 import android.arch.lifecycle.ViewModelProviders
 import android.os.Bundle
@@ -8,24 +8,25 @@ import android.view.View
 import android.view.ViewGroup
 import yass.stephanie.com.flight_checker.R
 
-class FindFlightsFragment : Fragment() {
+
+class FavouriteFlights : Fragment() {
 
     companion object {
-        fun newInstance() = FindFlightsFragment()
+        fun newInstance() = FavouriteFlights()
     }
 
-    private lateinit var viewModel: FindFlightsViewModel
+    private lateinit var viewModel: FavouriteFlightsViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View {
-        return inflater.inflate(R.layout.main_activity2_fragment, container, false)
+    ): View? {
+        return inflater.inflate(R.layout.favourite_flights_fragment, container, false)
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProviders.of(this).get(FindFlightsViewModel::class.java)
+        viewModel = ViewModelProviders.of(this).get(FavouriteFlightsViewModel::class.java)
         // TODO: Use the ViewModel
     }
 
