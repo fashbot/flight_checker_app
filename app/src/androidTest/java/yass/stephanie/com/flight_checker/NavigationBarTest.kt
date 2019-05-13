@@ -30,7 +30,7 @@ class NavigationBarTest {
 
     @Test
     fun verifyMyFlightsIsOnHomeScreenNavigation() {
-        onView(withId(R.id.navigation_my_flights)).perform(click())
+        onView(withId(R.id.book_flights_toolbar)).perform(click())
     }
 
 
