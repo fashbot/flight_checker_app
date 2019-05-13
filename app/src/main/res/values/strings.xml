@@ -1,9 +1,10 @@
 <resources>
-    <string name="app_name">flight_checker</string>
+    <string name="app_name">Flight Checker</string>
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
     <string name="title_my_flights">My flight</string>
     <string name="title_find_flights">Find flights</string>
     <string name="title_favourites">Favourites</string>
+    <string name="title_activity_splash">SplashActivity</string>
 </resources>

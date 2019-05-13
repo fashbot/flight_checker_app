@@ -2,17 +2,17 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-            android:id="@+id/navigation_home"
+            android:id="@+id/navigation_my_flights"
             android:icon="@drawable/ic_flights"
             android:title="@string/title_my_flights"/>
 
     <item
-            android:id="@+id/navigation_dashboard"
+            android:id="@+id/navigation_find_flights"
             android:icon="@drawable/ic_search"
             android:title="@string/title_find_flights"/>
 
     <item
-            android:id="@+id/navigation_notifications"
+            android:id="@+id/navigation_favourite_flights"
             android:icon="@drawable/ic_favourite"
             android:title="@string/title_favourites"/>
 
