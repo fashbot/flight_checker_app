@@ -23,15 +23,15 @@ class MainActivity : AppCompatActivity() {
 
         when (item.itemId) {
             R.id.navigation_my_flights -> {
-                openFragment(myFlightsFragment, R.id.my_flights_layout)
+                openFragment(myFlightsFragment)
                 return@OnNavigationItemSelectedListener true
             }
             R.id.navigation_find_flights -> {
-                openFragment(findFlightsFragment, R.id.find_flights_layout)
+                openFragment(findFlightsFragment)
                 return@OnNavigationItemSelectedListener true
             }
             R.id.navigation_favourite_flights -> {
-                openFragment(favouriteFlights, R.id.favourite_flights_layout)
+                openFragment(favouriteFlights)
                 return@OnNavigationItemSelectedListener true
             }
         }
@@ -40,7 +40,7 @@ class MainActivity : AppCompatActivity() {
     }
 
 
-    private fun openFragment(fragment: Fragment, heldFragment: Int) {
+    private fun openFragment(fragment: Fragment) {
         val fm: FragmentTransaction = supportFragmentManager.beginTransaction();
         fm.replace(currentFragment, fragment)
         fm.addToBackStack(null)

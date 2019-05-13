@@ -7,4 +7,7 @@
     <string name="title_find_flights">Find flights</string>
     <string name="title_favourites">Favourites</string>
     <string name="title_activity_splash">SplashActivity</string>
+    <string name="title_book_flights"> Book \nFlights </string>
+
+    "Book \n Flights"
 </resources>

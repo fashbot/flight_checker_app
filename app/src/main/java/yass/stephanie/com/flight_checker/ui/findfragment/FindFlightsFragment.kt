@@ -20,7 +20,7 @@ class FindFlightsFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        return inflater.inflate(R.layout.fragment_find_flights, container, false)
+        return inflater.inflate(R.layout.book_flights_fragment, container, false)
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
