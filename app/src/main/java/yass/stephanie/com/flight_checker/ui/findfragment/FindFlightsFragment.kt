@@ -19,8 +19,8 @@ class FindFlightsFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         val view: View = inflater.inflate(R.layout.book_flights_fragment, container, false)
-        val viewPager: ViewPager = view.findViewById(R.id.view_pager)
-        viewPager.adapter = BookFlightsTabAdapter(fragmentManager, this.requireActivity())
+        val viewPager: ViewPager? = view.findViewById(R.id.view_pager)
+        viewPager!!.adapter = BookFlightsTabAdapter(fragmentManager, this.requireActivity())
         val tabLayout: TabLayout = view.findViewById(R.id.book_flights_tab_layout)
         tabLayout.setupWithViewPager(viewPager)
         return view
@@ -31,5 +31,4 @@ class FindFlightsFragment : Fragment() {
         viewModel = ViewModelProviders.of(this).get(FindFlightsViewModel::class.java)
         // TODO: Use the ViewModel
     }
-
 }
