@@ -4,7 +4,7 @@ import android.arch.lifecycle.ViewModel;
 
 class RoundTripViewModel : ViewModel() {
 
-    private lateinit var airports: MutableList<String>
+    private var airports: MutableList<String> = mutableListOf()
     private var data = AirportData()
 
     init{
