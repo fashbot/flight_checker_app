@@ -6,7 +6,7 @@
     <string name="title_my_flights">My flight</string>
     <string name="title_find_flights">Find flights</string>
     <string name="title_favourites">Favourites</string>
-    <string name="title_activity_splash">SplashActivity</string>
+    <string name="title_activity_splash">Flight Checker</string>
     <string name="title_book_flights">Book \nFlights</string>
     <string name="round_trip">Round Trip</string>
     <string name="one_way">One Way</string>

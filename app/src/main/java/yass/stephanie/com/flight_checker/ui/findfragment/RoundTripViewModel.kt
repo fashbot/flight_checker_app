@@ -4,4 +4,14 @@ import android.arch.lifecycle.ViewModel;
 
 class RoundTripViewModel : ViewModel() {
     // TODO: Implement the ViewModel
+
+
+
+
+
+
+
+
+
+
 }
