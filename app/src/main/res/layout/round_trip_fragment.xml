@@ -13,7 +13,7 @@
             app:layout_constraintTop_toTopOf="parent"
             android:textAlignment="center"
             android:gravity="center"
-            tools:text="23 May 19"
+            android:text="From"
             android:textSize="12dp"
             android:background="@drawable/ic_spinner_background"
             app:layout_constraintStart_toStartOf="parent"
@@ -31,7 +31,7 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toEndOf="@+id/round_trip_from_spinner"
             app:layout_constraintEnd_toStartOf="@id/round_trip_to_spinner"
-            android:text="to"/>
+            android:text=" - "/>
 
     <TextView
             android:id="@+id/round_trip_to_spinner"
@@ -41,7 +41,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             android:textAlignment="center"
             android:gravity="center"
-            tools:text="23 May 19"
+            android:text="To"
             android:textSize="12dp"
 
             android:layout_height="40dp"/>
