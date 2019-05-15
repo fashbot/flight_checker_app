@@ -2,9 +2,9 @@
     <gradient
             android:centerX="0.5"
             android:centerY="0.3"
-            android:endColor="@color/navigationBackgroundColor"
+            android:endColor="@color/white"
             android:gradientRadius="300dp"
-            android:startColor="@color/navigationBackgroundColor"
+            android:startColor="@color/white"
             android:type="radial"/>
 </shape>
 

@@ -9,6 +9,7 @@ import android.support.v4.app.FragmentTransaction
 import android.support.v4.content.ContextCompat
 import android.support.v4.view.ViewPager
 import android.support.v7.app.AppCompatActivity
+import android.view.View
 import android.view.Window
 import android.view.WindowManager
 import android.widget.TableLayout
@@ -46,7 +47,6 @@ class MainActivity : AppCompatActivity() {
         false
     }
 
-
     private fun openFragment(fragment: Fragment) {
         val fm: FragmentTransaction = supportFragmentManager.beginTransaction();
         fm.replace(currentFragment, fragment)
@@ -57,14 +57,13 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         this.requestWindowFeature(Window.FEATURE_NO_TITLE);
-        setStatusBar()
+        windowUiConfiguration()
         setContentView(R.layout.activity_main)
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener)
     }
 
-    private fun setStatusBar(){
-        window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS)
-        window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
+    private fun windowUiConfiguration(){
+        window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_HIDE_NAVIGATION or View.SYSTEM_UI_FLAG_FULLSCREEN
         window.statusBarColor = ContextCompat.getColor(this, R.color.white)
     }
 
