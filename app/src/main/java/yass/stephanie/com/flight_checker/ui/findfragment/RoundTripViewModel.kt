@@ -1,18 +1,20 @@
 package yass.stephanie.com.flight_checker.ui.findfragment
 
 import android.arch.lifecycle.ViewModel;
+import java.util.ArrayList
 
 class RoundTripViewModel : ViewModel() {
 
-    private var airports: MutableList<String> = mutableListOf()
+    private var airports: ArrayList<String> = ArrayList()
     private var data = AirportData()
+
 
     init{
         populateAirport()
     }
 
 
-    private fun getAirportList(): MutableList<String>{
+    fun getAirportList(): MutableList<String>{
         return airports
     }
 

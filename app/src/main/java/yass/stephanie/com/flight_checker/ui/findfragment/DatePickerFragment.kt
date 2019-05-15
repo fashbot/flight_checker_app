@@ -24,7 +24,7 @@ class DatePickerFragment : DialogFragment(), DatePickerDialog.OnDateSetListener 
         year = calendar.get(Calendar.YEAR)
         month = calendar.get(Calendar.MONTH)
         day = calendar.get(Calendar.DAY_OF_MONTH)
-        var datePicker = DatePickerDialog(activity, this, year, month, day)
+        var datePicker = DatePickerDialog(context!!, this, year, month, day)
         datePicker.datePicker.minDate = calendar.time.time
         return datePicker
     }
