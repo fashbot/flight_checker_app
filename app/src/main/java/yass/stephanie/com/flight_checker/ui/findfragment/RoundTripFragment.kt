@@ -24,7 +24,8 @@ class RoundTripFragment : Fragment(), View.OnClickListener, AdapterView.OnItemSe
     private lateinit var toAirportDropDown: Spinner
     private lateinit var searchButton : Button
     private var count : Int = 0
-    private var isSelected: Boolean = false
+    private var innerCount : Int = 0
+    private var isSelected: Boolean = true
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -91,17 +92,14 @@ class RoundTripFragment : Fragment(), View.OnClickListener, AdapterView.OnItemSe
     }
 
     override fun onItemSelected(parent: AdapterView<*>, view: View, pos: Int, id: Long) {
-        if (count == 2) {
-            if(isSelected) {
-                isSelected = false
-            }
-            else{
-                Toast.makeText(
-                    parent.context,
-                    "OnItemSelectedListener : " + parent.getItemAtPosition(pos).toString(),
-                    Toast.LENGTH_SHORT
-                ).show()
-            }
+
+        count++
+        var text = "OnItemSelectedListener : " + parent.getItemAtPosition(pos).toString()
+        if(count > 4){
+            Toast.makeText(
+                parent.context, text,
+                Toast.LENGTH_SHORT
+            ).show()
         }
     }
 
